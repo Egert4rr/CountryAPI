@@ -32,6 +32,11 @@ function getInfo() {
         Region.innerHTML = "Region : " + country.region
         Subregion.innerHTML = "Subregion : " + country.subregion
         Population.innerHTML = "Population : " + country.population
-        Timezone.innerHTML = "Population : " + country.timezone[0]
+        Timezone.innerHTML = "Timezone : " + country.timezones[0]
+        LanguageInEnglish.innerHTML = "Language : " + country.languages[0].name
+        CurrencyCode.innerHTML = "Currency code : " + country.currencies[0].code
+        CurrencyName.innerHTML = "Currency name : " + country.currencies[0].name
+        CurrencySymbol.innerHTML = "Currency symbol : " + country.currencies[0].symbol
+        FlagImage.src = country.flag
     });
 };
